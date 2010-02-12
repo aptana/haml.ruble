@@ -1,9 +1,12 @@
 require 'ruble'
 
 bundle 'HAML' do |bundle|
-  bundle.author = 'Matt Polito'
-  bundle.contact_email_rot_13 = 'mpolito@reactioncontrol.com'
+  bundle.author = 'Christopher Williams'
+  bundle.copyright = "© Copyright 2010 Aptana Inc. Distributed under the MIT license."
+  bundle.repository = "git://github.com/aptana/haml.ruble.git"
   bundle.description =  <<END
+Ported from Matt Polito's HAML bundle for TextMate.
+
 <a href="http://unspace.ca/discover/haml">HTML Abstraction Markup Language</a> is a templating engine for Ruby on Rails.
 END
   # Folding
