@@ -1,8 +1,9 @@
 require 'ruble'
 
-bundle 'HAML' do |bundle|
+bundle do |bundle|
   bundle.author = 'Christopher Williams'
   bundle.copyright = "© Copyright 2010 Aptana Inc. Distributed under the MIT license."
+  bundle.display_name =  'HAML'
   bundle.repository = "git://github.com/aptana/haml.ruble.git"
   bundle.description =  <<END
 Ported from Matt Polito's HAML bundle for TextMate.
