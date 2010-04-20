@@ -22,29 +22,57 @@ END
       submenu.command 'XHTML - 1.0 Strict'
       submenu.command 'XHTML - 1.0 Transitional'
       submenu.command 'XHTML - 1.1'
+      submenu.command 'XHTML - Mobile'
     end
     main_menu.menu 'Insert XML Prolog' do |submenu|
       submenu.command 'XML prolog'
       submenu.command 'XML prolog iso-8859-1'
     end
     main_menu.menu 'Filters' do |submenu|
-      submenu.command 'Plain'
-      submenu.command 'Javascript'
+      submenu.command 'CDATA'
       submenu.command 'Escaped'
-      submenu.command 'Ruby'
-      submenu.command 'Preserve'
       submenu.command 'Erb'
-      submenu.command 'Sass'
-      submenu.command 'Textile'
+      submenu.command 'Javascript'
       submenu.command 'Markdown'
       submenu.command 'Maruku'
+      submenu.command 'Plain'
+      submenu.command 'Preserve'
+      submenu.command 'Ruby'
+      submenu.command 'Sass'
+      submenu.command 'Textile'
+    end
+     main_menu.menu 'Meta Tags' do |submenu|
+      submenu.command 'Meta - Generic'
+      submenu.command 'Meta - http-equiv'
     end
     main_menu.separator
     main_menu.command 'HTML - en-US'
     main_menu.command 'Element Attribute'
     main_menu.command 'IE Conditional'
     main_menu.command 'Page Class'
-    main_menu.command 'Convert HTML to HAML'
     main_menu.command 'Insert Tag'
+    main_menu.command 'Convert HTML to HAML'
+    main_menu.command 'Update Bundle'
+    main_menu.command 'Check Syntax'
+  end
+end
+
+# Extend Ruble::Editor to add special ENV vars
+module Ruble
+  class Editor
+    unless method_defined?(:modify_env_pre_haml_bundle)
+      alias :modify_env_pre_haml_bundle :modify_env
+      def modify_env(scope, env)
+        env_hash = modify_env_pre_haml_bundle(scope, env)
+        if scope.start_with? "text.haml"
+          env_hash['TM_COMMENT_START'] = "-# "
+          env_hash.delete('TM_COMMENT_END')
+          env_hash['TM_COMMENT_START_2'] = "/"
+          env_hash.delete('TM_COMMENT_END_2')
+          env_hash.delete('TM_COMMENT_DISABLE_INDENT')
+        end
+        env_hash
+      end
+    end
   end
 end
