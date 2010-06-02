@@ -52,7 +52,6 @@ END
     main_menu.command 'Page Class'
     main_menu.command 'Insert Tag'
     main_menu.command 'Convert HTML to HAML'
-    main_menu.command 'Update Bundle'
     main_menu.command 'Check Syntax'
   end
 end
