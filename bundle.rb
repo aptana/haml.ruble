@@ -14,8 +14,6 @@ END
   start_folding = /^\s*([-%#\:\.\w\=].*)\s$/
   end_folding = /^\s*$/
   bundle.folding['text.haml'] = start_folding, end_folding
-  # Make sure we associate file with our editor and give it a top-level scope
-  bundle.file_types['text.haml'] = '*.haml'
 
   bundle.menu 'HAML' do |main_menu|
     main_menu.menu 'Insert DocType' do |submenu|
