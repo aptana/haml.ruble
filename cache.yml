@@ -194,7 +194,7 @@ children:
   displayName: HAML
   path: bundle.rb
   scope: null
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: snippet-a7e69839-c810-424d-a988-6c93c8ce0a4f,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: snippet-ac9674ec-5d47-4d0b-af12-3bad91085410,
   path: bundle.rb, scope: text.haml}
 - !!com.aptana.scripting.model.CommandElement
   async: false
@@ -564,7 +564,7 @@ children:
   displayName: HAML Template, filetype: '*.haml', inputPath: null, keyBindingMap: null,
   outputPath: null, outputType: discard, path: templates/templates.rb, runType: current_thread,
   scope: null, workingDirectoryType: UNDEFINED}
-copyright: © Copyright 2010 Aptana Inc. Distributed under the MIT license.
+copyright: Copyright 2010 Aptana Inc. Distributed under the MIT license.
 customProperties: null
 decreaseIndentMarkers: &id002 {}
 description: 'Ported from Matt Polito''s HAML bundle for TextMate.
