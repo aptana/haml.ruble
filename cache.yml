@@ -194,12 +194,13 @@ children:
   displayName: HAML
   path: bundle.rb
   scope: null
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: snippet-ac9674ec-5d47-4d0b-af12-3bad91085410,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-fd040994-11bd-4690-831b-a29b81495d4c,
   path: bundle.rb, scope: text.haml}
 - !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Check Syntax
+  input: [none]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [M2+M4+V]
@@ -213,6 +214,7 @@ children:
   async: false
   customProperties: null
   displayName: Convert HTML to HAML
+  input: [selection, document]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [M1+M3+C]
@@ -228,6 +230,7 @@ children:
     prefix_values: [filter]
   displayName: CDATA
   expansion: ":cdata\n  $0"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -242,6 +245,7 @@ children:
     prefix_values: [filter]
   displayName: Erb
   expansion: ":erb\n  $0"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -256,6 +260,7 @@ children:
     prefix_values: [filter]
   displayName: Escaped
   expansion: ":escaped\n  $0"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -270,6 +275,7 @@ children:
     prefix_values: [filter]
   displayName: Javascript
   expansion: ":javascript\n  $0"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -284,6 +290,7 @@ children:
     prefix_values: [filter]
   displayName: Markdown
   expansion: ":markdown\n  $0"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -298,6 +305,7 @@ children:
     prefix_values: [filter]
   displayName: Maruku
   expansion: ":maruku\n  $0"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -312,6 +320,7 @@ children:
     prefix_values: [filter]
   displayName: Preserve
   expansion: ":preserve\n  $0"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -326,6 +335,7 @@ children:
     prefix_values: [filter]
   displayName: Ruby
   expansion: ":ruby\n  $0"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -340,6 +350,7 @@ children:
     prefix_values: [filter]
   displayName: Sass
   expansion: ":sass\n  $0"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -354,6 +365,7 @@ children:
     prefix_values: [filter]
   displayName: Textile
   expansion: ":textile\n  $0"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -368,6 +380,7 @@ children:
     prefix_values: [filter]
   displayName: Plain
   expansion: ":plain\n  $0"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -383,6 +396,7 @@ children:
   displayName: Meta - http-equiv
   expansion: '%meta{ ''http-equiv'' => ''Content-Type'', :content => ''text/html;'',
     ''charset'' => ''utf-8''${1:, }$2 }$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -397,6 +411,7 @@ children:
     prefix_values: [meta]
   displayName: Meta - Generic
   expansion: '%meta{ :name => ''$1'', :content => ''$2''${3:, }$4 }$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -411,6 +426,7 @@ children:
     prefix_values: [doctype]
   displayName: XHTML - 1.0 Strict
   expansion: '!!! strict'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -425,6 +441,7 @@ children:
     prefix_values: [doctype]
   displayName: XHTML - 1.0 Transitional
   expansion: '!!!'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -439,6 +456,7 @@ children:
     prefix_values: [doctype]
   displayName: XHTML - 1.1
   expansion: '!!! 1.1'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -453,6 +471,7 @@ children:
     prefix_values: [doctype]
   displayName: XHTML - Mobile
   expansion: '!!! Mobile'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -467,6 +486,7 @@ children:
     prefix_values: [xml]
   displayName: XML prolog iso-8859-1
   expansion: '!!! XML iso-8859-1'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -481,6 +501,7 @@ children:
     prefix_values: [xml]
   displayName: XML prolog
   expansion: '!!! XML'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -494,6 +515,7 @@ children:
   customProperties: null
   displayName: Insert Tag
   expansion: '%${1:p}'
+  input: [none]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': ['CONTROL+M2+,']
@@ -510,6 +532,7 @@ children:
   displayName: HTML - en-US
   expansion: '%html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", ''xml:lang''
     => "en" }'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -524,6 +547,7 @@ children:
     prefix_values: [ie]
   displayName: IE Conditional
   expansion: "/[if ${1:lte }IE${3: ${2:version}}]\n  $0"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -538,6 +562,7 @@ children:
     prefix_values: [pc]
   displayName: Page Class
   expansion: page_class
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -552,6 +577,7 @@ children:
     prefix_values: [':']
   displayName: Element Attribute
   expansion: :${1:AttributeName} => "$2"${3:, }$0
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -560,10 +586,20 @@ children:
   runType: current_thread
   scope: text.haml
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
-  displayName: HAML Template, filetype: '*.haml', inputPath: null, keyBindingMap: null,
-  outputPath: null, outputType: discard, path: templates/templates.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: HAML Template
+  filetype: '*.haml'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
 copyright: Copyright 2010 Aptana Inc. Distributed under the MIT license.
 customProperties: null
 decreaseIndentMarkers: &id002 {}
