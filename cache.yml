@@ -1,7 +1,202 @@
 !!com.aptana.scripting.model.BundleElement
 author: Christopher Williams
 children:
-- !command
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children:
+    - children: &id001 []
+      commandName: XHTML - 1.0 Strict
+      customProperties: null
+      displayName: XHTML - 1.0 Strict
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: XHTML - 1.0 Transitional
+      customProperties: null
+      displayName: XHTML - 1.0 Transitional
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: XHTML - 1.1
+      customProperties: null
+      displayName: XHTML - 1.1
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: XHTML - Mobile
+      customProperties: null
+      displayName: XHTML - Mobile
+      path: bundle.rb
+      scope: null
+    commandName: Insert DocType
+    customProperties: null
+    displayName: Insert DocType
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: XML prolog
+      customProperties: null
+      displayName: XML prolog
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: XML prolog iso-8859-1
+      customProperties: null
+      displayName: XML prolog iso-8859-1
+      path: bundle.rb
+      scope: null
+    commandName: Insert XML Prolog
+    customProperties: null
+    displayName: Insert XML Prolog
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: CDATA
+      customProperties: null
+      displayName: CDATA
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Escaped
+      customProperties: null
+      displayName: Escaped
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Erb
+      customProperties: null
+      displayName: Erb
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Javascript
+      customProperties: null
+      displayName: Javascript
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Markdown
+      customProperties: null
+      displayName: Markdown
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Maruku
+      customProperties: null
+      displayName: Maruku
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Plain
+      customProperties: null
+      displayName: Plain
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Preserve
+      customProperties: null
+      displayName: Preserve
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Ruby
+      customProperties: null
+      displayName: Ruby
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Sass
+      customProperties: null
+      displayName: Sass
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Textile
+      customProperties: null
+      displayName: Textile
+      path: bundle.rb
+      scope: null
+    commandName: Filters
+    customProperties: null
+    displayName: Filters
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Meta - Generic
+      customProperties: null
+      displayName: Meta - Generic
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Meta - http-equiv
+      customProperties: null
+      displayName: Meta - http-equiv
+      path: bundle.rb
+      scope: null
+    commandName: Meta Tags
+    customProperties: null
+    displayName: Meta Tags
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: HTML - en-US
+    customProperties: null
+    displayName: HTML - en-US
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Element Attribute
+    customProperties: null
+    displayName: Element Attribute
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: IE Conditional
+    customProperties: null
+    displayName: IE Conditional
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Page Class
+    customProperties: null
+    displayName: Page Class
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Insert Tag
+    customProperties: null
+    displayName: Insert Tag
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Convert HTML to HAML
+    customProperties: null
+    displayName: Convert HTML to HAML
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Check Syntax
+    customProperties: null
+    displayName: Check Syntax
+    path: bundle.rb
+    scope: null
+  commandName: HAML
+  customProperties: null
+  displayName: HAML
+  path: bundle.rb
+  scope: null
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-696a13cc-f62a-495f-b3e6-738fdc65411e,
+  path: bundle.rb, scope: text.haml}
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Check Syntax
@@ -14,6 +209,19 @@ children:
   path: commands/check_syntax.rb
   runType: current_thread
   scope: text.haml
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Convert HTML to HAML
+  input: [selection, document]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: replace_selection
+  path: commands/convert_html_to_haml.rb
+  runType: current_thread
+  scope: null
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -391,217 +599,9 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.MenuElement
-  children:
-  - children:
-    - children: &id001 []
-      commandName: XHTML - 1.0 Strict
-      customProperties: null
-      displayName: XHTML - 1.0 Strict
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: XHTML - 1.0 Transitional
-      customProperties: null
-      displayName: XHTML - 1.0 Transitional
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: XHTML - 1.1
-      customProperties: null
-      displayName: XHTML - 1.1
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: XHTML - Mobile
-      customProperties: null
-      displayName: XHTML - Mobile
-      path: bundle.rb
-      scope: null
-    commandName: Insert DocType
-    customProperties: null
-    displayName: Insert DocType
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: XML prolog
-      customProperties: null
-      displayName: XML prolog
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: XML prolog iso-8859-1
-      customProperties: null
-      displayName: XML prolog iso-8859-1
-      path: bundle.rb
-      scope: null
-    commandName: Insert XML Prolog
-    customProperties: null
-    displayName: Insert XML Prolog
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: CDATA
-      customProperties: null
-      displayName: CDATA
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Escaped
-      customProperties: null
-      displayName: Escaped
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Erb
-      customProperties: null
-      displayName: Erb
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Javascript
-      customProperties: null
-      displayName: Javascript
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Markdown
-      customProperties: null
-      displayName: Markdown
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Maruku
-      customProperties: null
-      displayName: Maruku
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Plain
-      customProperties: null
-      displayName: Plain
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Preserve
-      customProperties: null
-      displayName: Preserve
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Ruby
-      customProperties: null
-      displayName: Ruby
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Sass
-      customProperties: null
-      displayName: Sass
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Textile
-      customProperties: null
-      displayName: Textile
-      path: bundle.rb
-      scope: null
-    commandName: Filters
-    customProperties: null
-    displayName: Filters
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: Meta - Generic
-      customProperties: null
-      displayName: Meta - Generic
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Meta - http-equiv
-      customProperties: null
-      displayName: Meta - http-equiv
-      path: bundle.rb
-      scope: null
-    commandName: Meta Tags
-    customProperties: null
-    displayName: Meta Tags
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: '-'
-    customProperties: null
-    displayName: '-'
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: HTML - en-US
-    customProperties: null
-    displayName: HTML - en-US
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Element Attribute
-    customProperties: null
-    displayName: Element Attribute
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: IE Conditional
-    customProperties: null
-    displayName: IE Conditional
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Page Class
-    customProperties: null
-    displayName: Page Class
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Insert Tag
-    customProperties: null
-    displayName: Insert Tag
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Convert HTML to HAML
-    customProperties: null
-    displayName: Convert HTML to HAML
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Check Syntax
-    customProperties: null
-    displayName: Check Syntax
-    path: bundle.rb
-    scope: null
-  commandName: HAML
-  customProperties: null
-  displayName: HAML
-  path: bundle.rb
-  scope: null
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-d95b8564-5a79-4bf6-806d-c7e3f9a1ba75,
-  path: bundle.rb, scope: text.haml}
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Convert HTML to HAML
-  input: [selection, document]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: replace_selection
-  path: commands/convert_html_to_haml.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
 copyright: Copyright 2010 Aptana Inc. Distributed under the MIT license.
 customProperties: null
-decreaseIndentMarkers: {}
+decreaseIndentMarkers: &id002 {}
 description: 'Ported from Matt Polito''s HAML bundle for TextMate.
 
 
@@ -610,11 +610,11 @@ description: 'Ported from Matt Polito''s HAML bundle for TextMate.
 
   '
 displayName: HAML
-fileTypeRegistry: {}
-fileTypes: []
+fileTypeRegistry: *id002
+fileTypes: *id001
 foldingStartMarkers: {!scope 'text.haml': !regexp '(?-mix:^\s*([-%#\:\.\w\=].*)\s$)'}
 foldingStopMarkers: {!scope 'text.haml': !regexp '(?-mix:^\s*$)'}
-increaseIndentMarkers: {}
+increaseIndentMarkers: *id002
 license: null
 licenseUrl: null
 path: bundle.rb
