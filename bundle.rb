@@ -3,7 +3,7 @@ require 'ruble'
 bundle do |bundle|
   bundle.author = 'Christopher Williams'
   bundle.copyright = "Copyright 2010 Aptana Inc. Distributed under the MIT license."
-  bundle.display_name =  'HAML'
+  bundle.display_name =  t(:bundle_name)
   bundle.repository = "git://github.com/aptana/haml.ruble.git"
   bundle.description =  <<END
 Ported from Matt Polito's HAML bundle for TextMate.
@@ -15,42 +15,42 @@ END
   end_folding = /^\s*$/
   bundle.folding['text.haml'] = start_folding, end_folding
 
-  bundle.menu 'HAML' do |main_menu|
-    main_menu.menu 'Insert DocType' do |submenu|
-      submenu.command 'XHTML - 1.0 Strict'
-      submenu.command 'XHTML - 1.0 Transitional'
-      submenu.command 'XHTML - 1.1'
-      submenu.command 'XHTML - Mobile'
+  bundle.menu t(:bundle_name) do |main_menu|
+    main_menu.menu t(:insert_doctype) do |submenu|
+      submenu.command t(:xhtml_1_strict)
+      submenu.command t(:xhtml_1_transitional)
+      submenu.command t(:xhtml_1_1)
+      submenu.command t(:xhtml_mobile)
     end
-    main_menu.menu 'Insert XML Prolog' do |submenu|
-      submenu.command 'XML prolog'
-      submenu.command 'XML prolog iso-8859-1'
+    main_menu.menu t(:insert_xml_prolog) do |submenu|
+      submenu.command t(:xml_prolog)
+      submenu.command t(:xml_prolog_iso_8859_1)
     end
-    main_menu.menu 'Filters' do |submenu|
-      submenu.command 'CDATA'
-      submenu.command 'Escaped'
-      submenu.command 'Erb'
-      submenu.command 'Javascript'
-      submenu.command 'Markdown'
-      submenu.command 'Maruku'
-      submenu.command 'Plain'
-      submenu.command 'Preserve'
-      submenu.command 'Ruby'
-      submenu.command 'Sass'
-      submenu.command 'Textile'
+    main_menu.menu t(:filters) do |submenu|
+      submenu.command t(:cdata)
+      submenu.command t(:escaped)
+      submenu.command t(:erb)
+      submenu.command t(:javascript)
+      submenu.command t(:markdown)
+      submenu.command t(:maruku)
+      submenu.command t(:plain)
+      submenu.command t(:preserve)
+      submenu.command t(:ruby)
+      submenu.command t(:sass)
+      submenu.command t(:textile)
     end
-     main_menu.menu 'Meta Tags' do |submenu|
-      submenu.command 'Meta - Generic'
-      submenu.command 'Meta - http-equiv'
+     main_menu.menu t(:meta_tags) do |submenu|
+      submenu.command t(:meta_generic)
+      submenu.command t(:meta_http_equiv)
     end
     main_menu.separator
-    main_menu.command 'HTML - en-US'
-    main_menu.command 'Element Attribute'
-    main_menu.command 'IE Conditional'
-    main_menu.command 'Page Class'
-    main_menu.command 'Insert Tag'
-    main_menu.command 'Convert HTML to HAML'
-    main_menu.command 'Check Syntax'
+    main_menu.command t(:html_en_us)
+    main_menu.command t(:element_attribute)
+    main_menu.command t(:ie_conditional)
+    main_menu.command t(:page_class)
+    main_menu.command t(:insert_tag)
+    main_menu.command t(:convert_html_to_haml)
+    main_menu.command t(:check_syntax)
   end
 end
 
