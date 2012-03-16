@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Check Syntax' do |cmd|
+command t(:check_syntax) do |cmd|
   cmd.key_binding = 'M2+M4+V'
   cmd.scope = 'text.haml'
   cmd.output = :show_as_tooltip

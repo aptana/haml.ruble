@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Convert HTML to HAML' do |cmd|
+command t(:convert_html_to_haml) do |cmd|
   # cmd.key_binding = 'M1+M3+C' # Alt + Cmd not friendly for overseas users
   cmd.output = :replace_selection
   cmd.input = :selection, :document
